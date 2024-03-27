@@ -1,22 +1,24 @@
 import "./App.css";
 import { useState } from "react";
 
-type personProps = {
-  id: {
-    value: string;
-  };
-  name: {
-    first: string;
-    last: string;
-  };
-};
-
-type messageProps = {
-  results: personProps[];
+type dataProps = {
+  results:
+    | [
+        {
+          id: {
+            value?: string;
+          };
+          name: {
+            first: string;
+            last: string;
+          };
+        }
+      ]
+    | [];
 };
 
 function App() {
-  const [data, setData] = useState<messageProps>({ results: [] });
+  const [data, setData] = useState<dataProps>({ results: [] });
 
   const handleClick = async (): Promise<void> => {
     const data = await fetch("https://randomuser.me/api/?nat=gb");
