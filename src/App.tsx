@@ -12,7 +12,7 @@ type dataProps = {
             first: string;
             last: string;
           };
-        }
+        },
       ]
     | [];
 };
@@ -29,7 +29,12 @@ function App() {
   return (
     <div className="mt-5 mx-auto max-w-md rounded-xl border-3 bg-blue-500 py-8 px-8 text-white text-center">
       <h1 className="text-2xl mb-8">Home Page</h1>
-      <button className="transition border rounded py-3 px-3 font-bold shadow-lg bg-amber-700 hover:bg-amber-100 hover:text-amber-700 active:shadow-none" onClick={handleClick}>Get Data</button>
+      <button
+        className="transition border rounded py-3 px-3 font-bold shadow-lg bg-amber-700 hover:bg-amber-100 hover:text-amber-700 active:shadow-none"
+        onClick={handleClick}
+      >
+        Get Data
+      </button>
       <ul className="mt-8">
         {data?.results &&
           data.results.map((person) => (
