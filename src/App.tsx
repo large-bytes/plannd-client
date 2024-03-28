@@ -1,4 +1,3 @@
-import "./App.css";
 import { useState } from "react";
 
 type dataProps = {
@@ -22,7 +21,8 @@ function App() {
 
   const handleClick = async (): Promise<void> => {
     try {
-      const data = await fetch("https://randomuser.me/api/?nat=gb");
+      const data = await fetch("http://localhost:8000/articles/", {
+      });
       const info = (await data.json()) as dataProps;
       setData(info);
     } catch (error) {
