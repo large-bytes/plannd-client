@@ -1,4 +1,7 @@
 import { useState } from "react";
+import ButtonPrimary from "./components/ButtonPrimary";
+import ButtonSecondary from "./components/ButtonSecondary";
+import ButtonDisabled from "./components/ButtonDisabled";
 
 type dataProps = {
   results:
@@ -21,8 +24,7 @@ function App() {
 
   const handleClick = async (): Promise<void> => {
     try {
-      const data = await fetch("http://localhost:8000/articles/", {
-      });
+      const data = await fetch("http://localhost:8000/articles/", {});
       const info = (await data.json()) as dataProps;
       setData(info);
     } catch (error) {
@@ -47,6 +49,11 @@ function App() {
             </li>
           ))}
       </ul>
+      <div className="flex justify-center gap-4">
+        <ButtonPrimary>SAVE</ButtonPrimary>
+        <ButtonSecondary>DELETE</ButtonSecondary>
+        <ButtonDisabled>SAVE</ButtonDisabled>
+      </div>
     </div>
   );
 }
