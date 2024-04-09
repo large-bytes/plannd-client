@@ -1,7 +1,7 @@
 import { useState } from "react";
-import ButtonPrimary from "./components/ButtonPrimary";
-import ButtonSecondary from "./components/ButtonSecondary";
-import ButtonDisabled from "./components/ButtonDisabled";
+import ButtonPrimary from "./components/buttons/ButtonPrimary";
+import ButtonSecondary from "./components/buttons/ButtonSecondary";
+import ButtonDisabled from "./components/buttons/ButtonDisabled";
 
 type dataProps = {
   results:
