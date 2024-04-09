@@ -2,6 +2,7 @@ import { useState } from "react";
 import ButtonPrimary from "./components/buttons/ButtonPrimary";
 import ButtonSecondary from "./components/buttons/ButtonSecondary";
 import ButtonDisabled from "./components/buttons/ButtonDisabled";
+import InputPrimary from "./components/inputs/InputPrimary";
 
 type dataProps = {
   results:
@@ -49,10 +50,14 @@ function App() {
             </li>
           ))}
       </ul>
-      <div className="flex justify-center gap-4">
+      <div className="flex justify-center gap-4 my-6">
         <ButtonPrimary>SAVE</ButtonPrimary>
         <ButtonSecondary>DELETE</ButtonSecondary>
         <ButtonDisabled>SAVE</ButtonDisabled>
+      </div>
+      <div className="flex flex-col justify-center gap-4 my-6">
+        <InputPrimary type={"text"}>Full Name</InputPrimary>
+        <InputPrimary type={"email"}>Email</InputPrimary>
       </div>
     </div>
   );

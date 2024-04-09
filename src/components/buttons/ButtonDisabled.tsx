@@ -1,4 +1,4 @@
-// file: src/components/button.tsx
+// file: src/components/buttons/ButtonDisabled.tsx
 
 const ButtonDisabled = ({ children }: { children: string }) => {
   return (

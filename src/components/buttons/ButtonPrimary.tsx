@@ -1,4 +1,4 @@
-// file: src/components/button.tsx
+// file: src/components/buttons/ButtonPrimary.tsx
 
 const ButtonPrimary = ({ children }: { children: string }) => {
   return (
