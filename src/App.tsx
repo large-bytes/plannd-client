@@ -2,9 +2,8 @@
 
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/navigation/NavBar";
-import Staff from "./routes/Staff";
-import Home from "./routes/Home";
 import Rota from "./routes/Rota";
+import Staff from "./routes/Staff";
 import NoMatch from "./routes/NoMatch";
 
 // import { useState } from "react";
@@ -34,9 +33,8 @@ function App() {
     <>
       <NavBar />
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Rota />} />
         <Route path="/staff" element={<Staff />} />
-        <Route path="/rota" element={<Rota />} />
         <Route path="*" element={<NoMatch />} />
       </Routes>
     </>

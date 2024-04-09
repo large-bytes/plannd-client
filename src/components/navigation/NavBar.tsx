@@ -4,11 +4,10 @@ import { NavLink } from "react-router-dom";
 
 const NavBar = () => {
   return (
-    <nav>
-      <ul>
-        <NavLink to="/">Home</NavLink>
+    <nav className="flex gap-6 justify-end">
+      <ul className="flex gap-6 m-3">
+        <NavLink className="active:" to="/">Rota</NavLink>
         <NavLink to="/staff">Staff</NavLink>
-        <NavLink to="/rota">Rota</NavLink>
       </ul>
     </nav>
   );
