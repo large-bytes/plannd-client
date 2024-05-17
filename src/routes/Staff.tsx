@@ -8,6 +8,16 @@ const mockData01 = [
     name: "John Mulaney",
     email: "jmulaney@example.com",
   },
+  {
+    id: "def",
+    name: "Jane Mulaney",
+    email: "jmulaney@example.com",
+  },
+  {
+    id: "ghi",
+    name: "Carol Menzie",
+    email: "cmenzie@example.com",
+  },
 ];
 
 const Staff = () => {
