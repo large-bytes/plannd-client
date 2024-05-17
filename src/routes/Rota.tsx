@@ -1,9 +1,11 @@
 // file: large-bytes/plannd/plannd-client/src/routes/Rota.tsx
 
+import Header from "../components/headers/header";
+
 const Rota = () => {
   return (
-    <div className="flex justify-center align-middle">
-      <h1>ROTA</h1>
+    <div className="flex flex-col p-4">
+      <Header>Rota</Header>
     </div>
   );
 };
