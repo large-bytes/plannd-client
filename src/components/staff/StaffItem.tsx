@@ -2,7 +2,7 @@
 // John Mulaney
 // jmulaney@example.com
 
-type StaffItemProps = {
+export type StaffItemProps = {
   id: string;
   name: string;
   email: string;

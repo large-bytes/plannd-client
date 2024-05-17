@@ -1,11 +1,14 @@
 // file: plannd-client/src/components/staff/StaffList.tsx
 
-// import StaffItem from "./StaffItem";
+import StaffItem, { StaffItemProps } from "./StaffItem";
 
-const StaffList = () => {
+const StaffList = ({ staffListData }: { staffListData: StaffItemProps[] }) => {
   return (
     <ul className="flex flex-col gap-4 mt-5 mb-5">
-      {/* <StaffItem /> */}
+      {staffListData &&
+        staffListData.map((employee) => (
+          <StaffItem key={employee.id} {...employee} />
+        ))}
     </ul>
   );
 };
